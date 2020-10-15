@@ -16,8 +16,20 @@ username = ""
 password = ""
 attempts = 0
 max_attempts = 3
+found = False
 
-while username != "andres" and password != "security":
+while not found:
+    username = input("Please enter your username: ")
+    password = input("Please enter your password: ")
     attempts += 1
-    if attempts == max_attempts:
+
+    if username == "andres" and password == "security":
+        print("Welcome back to the system")
+        found = True
+
+    elif attempts == max_attempts:
         print("***Your account is locked***")
+        break
+
+    else:
+        print("Try again")
