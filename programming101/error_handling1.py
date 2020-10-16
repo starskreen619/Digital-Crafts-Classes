@@ -1,7 +1,7 @@
-num1 = int(input("Please enter a number: "))
+num1 = input("Please enter a number: ")
 
 try:
-    #int_num1 = int(num1)
+    int_num1 = int(num1)
     print("The number is " + num1)
 
 except ValueError:
