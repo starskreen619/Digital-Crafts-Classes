@@ -1,4 +1,4 @@
-let num = 0;
+let num = 0; //declares variable
 
 let myButton = document.querySelector("#more-info");
 myButton.classList.add("primary");
@@ -19,5 +19,5 @@ const funct2 = function () {
   console.log("funtion 2 was fired");
 };
 
-myButton.addEventListener("click", funct1);
-myButton.addEventListener("click", funct2);
+myButton.addEventListener("click", funct1); //on click triggers funct1
+myButton.addEventListener("click", funct2); //on click triggers funct2
