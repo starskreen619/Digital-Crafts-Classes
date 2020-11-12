@@ -5,7 +5,7 @@ let newArray = [...myArray, ...myArray2];
 console.log(newArray);
 
 /////////////////////
-
+console.log("Separator");
 const cars = [
   {
     make: "Chevy",
@@ -45,6 +45,31 @@ let newCars = [
 let updatedCars = [...cars, ...newCars];
 console.log(updatedCars);
 
-//////////////////////s
+//////////////////////
+console.log("Separator");
 
-let removedCars = 
+let removedCars = updatedCars.filter((old) => old.year > 2018);
+console.log(removedCars);
+
+console.log("Separator");
+
+////////////////////////
+
+let newFocus = [
+  {
+    make: "ford",
+    model: "focus",
+    year: 2020,
+  },
+];
+
+let focusAdd = [...newFocus, ...updatedCars];
+
+console.log(focusAdd);
+
+console.log("Separator");
+
+//////////////////////////////////
+
+let carAge = focusAdd.sort((a, b) => b.year - a.year);
+console.log(carAge);

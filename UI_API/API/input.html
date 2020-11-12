@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="float: left">
+    <label for="Your name here"
+      >Name
+      <input type="text" placeholder="Your name here" />
+      <input
+        type="checkbox"
+        name="agreement"
+        id="Do you agree with the terms"
+        value="I do agree with the terms"
+        checked
+      />
+      I do agree with the terms
+    </label>
+    <br />
+    <div>
+      <br /><br />
+      <label>
+        Cars
+        <input value="cars" name="transport" type="checkbox" />
+      </label>
+      <label>
+        Trains
+        <input value="trains" name="transport" type="checkbox" />
+      </label>
+      <label>
+        Planes
+        <input value="planes" name="transport" type="checkbox" />
+      </label>
+      <label>
+        Ships
+        <input value="ships" name="transport" type="checkbox" />
+      </label>
+    </div>
+    <br /><br />
+    <div style="font-size: xx-large, baca">
+      <label>
+        Cars
+        <input value="cars" name="transport" type="radio" />
+      </label>
+      <label>
+        Trains
+        <input value="trains" name="transport" type="radio" />
+      </label>
+      <label>
+        Planes
+        <input value="planes" name="transport" type="radio" checked />
+      </label>
+    </div>
+    <div>
+      <label for="favorite-food">Favorite Food</label>
+      <select name="favorite-food" id="favorite-food">
+        <optgroup label="Main menu">
+          <option value="">---Please Select a Food ---</option>
+          <option value="pizza">Pizza (Ninja Turtles)</option>
+          <option value="mushrooms">Shrooms (Mario)</option>
+        </optgroup>
+        <optgroup for="dessert" label="dessert" class="dessert">
+          <option value="doughnut">Doughnuts (Homer)</option>
+        </optgroup>
+      </select>
+    </div>
+    <div>
+      <input type="range" name="volumn" min="0" max="10" step="1" value="2" />
+    </div>
+    <div>
+      <input type="color" id="text-color" name="text-color" value="#e66465" />
+    </div>
+    <div>
+      <input type="date" id="birthday" name="birthday" value="1981-30-11" />
+    </div>
+    <div>
+      <label for="description">Condition Description</label>
+      <br />
+      <textarea
+        id="description"
+        cols="10"
+        rows="20"
+        name="description"
+        placeholder="Describe your medical condition"
+      ></textarea>
+    </div>
+    <script>
+      // newOpt.value = "roscas"
+      // document.querySelector(#"dessert").append(newOpt)
+      let newOpt = document.createElement(“option”)
+        newOpt.value = “hamburger”
+        newOpt.innerText = “Hamburger (hamburgler)”
+        document.querySelector(“#favorite-food”)
+        document.querySelector(“#favorite-food”).append(newOpt)
+    </script>
+  </body>
+</html>
