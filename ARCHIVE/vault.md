@@ -26,6 +26,7 @@ login
 <!-- Ajax module -->
 <!-- ajax.js Export -->
 
+<script>
 const ajax = (url, callback, method='GET')=>{
 if(!url) return console.error("Request Required")
 if(!callback) return console.error("Callback Required")
@@ -34,17 +35,18 @@ request.addEventListener("readystatechange", evt=>{
 let req = evt.target;
 if(req.readyState !== 4) return;
 if(req.status === 200) return callback(req.response)
-callback("")
-})
+callback("")})
 request.open(method,url)
 request.send()
 }
-
 export default ajax;
+</script>
 
   <!-- ajax import -->
 
-import ajax from "./folder/ajax.js"
+<script>
+import ajax from "./ajax.js"
 
 const callback = res, err)=>document.body.append(res)  
  ajax("./samples/text.txt", callback)
+</script>
