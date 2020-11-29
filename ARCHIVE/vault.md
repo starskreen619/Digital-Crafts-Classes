@@ -47,6 +47,29 @@ export default ajax;
 <script>
 import ajax from "./ajax.js"
 
+
 const callback = res, err)=>document.body.append(res)  
  ajax("./samples/text.txt", callback)
+
+
+//current location
+
+navigator.geolocations.getCurrentPosition(success,error);
+
+function success(pos){
+    let lat = pos.coords.latitude;
+    let long = pos.coords.longitude;
+    weather(lat,long);
+}
+
+function error(){
+    console.log('error')
+}
+
+function weather(lat, long){
+    var URL = `API url ${alt} ... ${long}`
+}
+
+
+
 </script>

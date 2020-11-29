@@ -1,0 +1,22 @@
+{
+  "name": "app2",
+  "version": "1.0.0",
+  "description": "my awesome description",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist.index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "lint": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/starskreen619/app2.git"
+  },
+  "author": "Andres Santana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/starskreen619/app2/issues"
+  },
+  "homepage": "https://github.com/starskreen619/app2#readme"
+}
